@@ -1,33 +1,20 @@
-
-<!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Reaction Test</title>
-    <link rel="stylesheet" type="text/css" href="resources/css/styles.css"/>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		
 </head>
 
 <body>
-	<header>
-    	<h1>Reaction Test</h1>
-	</header>
-	
-	<div id="description">
-		Press the start button to start the experiment. As soon as you hear a sound, press the space bar.
-		Your reaction time is measured. After 10 trials, your times will be displayed and exported as a csv-file. Refresh the page to repeat the experiment.
-	</div>
-	<!--image from: https://pixabay.com/de/vectors/megaphon-lautsprecher-sprache-155780/-->
-	<div><img src="megaphone-155780.svg" id="image"></div>
-	<span class="button">Start Experiment</span>
-	<div>
-		<span id="results" class="results hidden">0</span>
-		<span id="times" class="times"></span>
-	</div>
-	
+    <h1 id="text">Fitts' Law Experiment</h1>
+    <input type="text" id="task-input" placeholder="Enter your input device">
+    <button id="start-button">Start experiment</button> 
+    <div class="container">
+      <span class="left-box"></span>
+	    <span class="right-box"></span>
+	  </div>
+
+   <div class="test"> </div>
+   <script type="text/javascript" src="code.js"></script>
 </body>
-
-
-<script type="text/javascript" src="resources/js/code.js" ></script>
 
 </html>
